@@ -23,5 +23,6 @@ jobs:
             cd /home/${{ secrets.SSH_USER }}/projects/pal-poll/infra
             git pull origin main
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-            docker compose pull
+            docker compose pull --build
             docker compose up -d
+            docker system prune -af

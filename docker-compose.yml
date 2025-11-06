@@ -17,7 +17,7 @@ services:
       - "8080:80"
 
   mongo:
-    image: mongo:6
+    image: mongo:noble
     container_name: palpoll-db
     ports:
       - "27017:27017"
