@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.DEVOPS_SSH_KEY }}
           script: |
             pwd
-            cd projects/pal-poll/infra
+            cd /home/${{ secrets.SSH_USER }}/projects/pal-poll/infra
             git pull origin main
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             docker compose pull
