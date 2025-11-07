@@ -1,13 +1,5 @@
-<div>
-	<table>
-		<tr>
-			<td><code><img width="40" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="Docker" title="Docker"/></code></td>
-			<td><code><img width="40" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/kubernetes.png" alt="Kubernetes" title="Kubernetes"/></code></td>
-			<td><code><img width="40" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/nginx.png" alt="Nginx" title="Nginx"/></code></td>
-			<td><code><img width="40" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png" alt="Linux" title="Linux"/></code></td>
-		</tr>
-	</table>
-</div>
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-FF69B4?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)
+
 
 # PalPoll Deployment Pipeline
 After developing my full-stack app PalPoll (an online quiz game for me and my close friends), I became frustrated with the tedious manual deployment process:
@@ -18,13 +10,14 @@ After developing my full-stack app PalPoll (an online quiz game for me and my cl
 
 To streamline the process, and as a learning exercise in CI/CD and developer operations, I built a deployment pipeline to automatically run the full application with every push.
 
-## Existing setup
+## Previous Process
 
 - Ubuntu homelab hosts applications pulled from GitHub
 - DNS records for subdomains configured via Cloudflare Dashboard
 - Nginx reverse proxies traffic to respective processes
 
-## CI/CD Process
+## Upgraded CI/CD Workflow
+<img width="800" alt="CI/CD Architecture" src="https://github.com/user-attachments/assets/fd888388-0921-4648-bb3a-1045d46282c5" />
 
 ### Docker
 The first step in improving deployment and availability was to dockerize my existing front and backend applications.
